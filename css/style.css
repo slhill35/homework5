@@ -241,11 +241,25 @@ header{
 
 /*Your code here again.*/ 
 /*Add media query to handle reduced-motion*/
-@media (prefers-reduced-motion: reduced){
+@media (prefers-reduced-motion){
+  html{
+    scroll-behavior: auto;
+  }
   #logo{
-    animation-name: logo_wiggle;
-    animation-duration: 15s;
-    -webkit-animation-name: logo_wiggle;
+    -webkit-animation: none;
+    animation: none;
+
+}
+}(prefers-reduced-motion){
+  html{
+    scroll-behavior: auto;
+  }
+  #logo{
+    -webkit-animation: none;
+    animation: none;
+
+}
+}
 
 }
 }
