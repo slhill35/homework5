@@ -227,8 +227,15 @@ header{
   }
   /*Your code here again.*/
   /*You will want four selectors*/  
- 
-
+ body{
+   background-image: none;
+ }
+ .gallery, #gallery{
+   display: none;
+ }
+ h2{
+   display: none;
+ }
 
 }
 
